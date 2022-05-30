@@ -7,4 +7,20 @@ div.desktop {
     display: flex;
     align-items: center;
     justify-content: center;
+    & .icon {
+        position: relative;
+        width: 150px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        & .title {
+            color:red;
+        }
+        & .image {
+            border-radius: 20px;
+        }
+    }
 }
