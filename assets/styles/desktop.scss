@@ -3,24 +3,34 @@ div.desktop {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
     & .icon {
         position: relative;
         width: 150px;
-        height: 200px;
+        height: 150px;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         text-decoration: none;
+        border-radius: 20px;
+        overflow: hidden;
         & .title {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
             color:red;
+            padding: .2rem;
+            background-color: black;
         }
         & .image {
-            border-radius: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
     }
 }

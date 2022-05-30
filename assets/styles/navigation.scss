@@ -7,6 +7,7 @@ nav {
         display: none;
         & ~ label {
             cursor: pointer;
+            color: white;
         }
         &:checked ~ .menu-wrapper {
             transform: translateX(150%);
@@ -17,6 +18,21 @@ nav {
         position: relative;
         left: -150%;
         list-style: none;
+        & .menu-item {
+            &:first-of-type {
+                border-radius: 1rem 1rem 0 0;
+            }
+            &:last-of-type {
+                border-radius: 0 0 1rem 1rem;
+            }
+            background-color: black;
+            padding: 0.3rem 1rem;
+            & a {
+                display: block;
+                min-width: 5rem;
+                color: white;
+                text-decoration: none;
+            }
+        }
     }
-
 }
