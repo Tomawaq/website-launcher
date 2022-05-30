@@ -1,0 +1,22 @@
+nav {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 100;
+    input#menu {
+        display: none;
+        & ~ label {
+            cursor: pointer;
+        }
+        &:checked ~ .menu-wrapper {
+            transform: translateX(150%);
+        }
+    }
+    .menu-wrapper {
+        transition: transform 500ms ease;
+        position: relative;
+        left: -150%;
+        list-style: none;
+    }
+
+}
